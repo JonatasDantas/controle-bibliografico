@@ -4,7 +4,8 @@ Aplicação Java para Controle Bibliográfico - EP Banco de Dados USP
 
 
 queries:
-`
+
+
 CREATE TABLE public.publicacoes (
 	id SERIAL,
 	tipo_publicacao VARCHAR(20) NOT NULL,
@@ -171,4 +172,3 @@ CREATE TABLE public.publicacoes_autores (
 	FOREIGN KEY (id_publicacao) REFERENCES public.publicacoes (id),
 	FOREIGN KEY (id_autor) REFERENCES public.autores (id)
 );
-`
